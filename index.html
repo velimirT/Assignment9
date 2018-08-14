@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+<script src="https://cdn.jsdelivr.net/momentjs/2.12.0/moment.min.js"></script>
+<script src = "assets/js/main.js"></script>
+<link href="https://fonts.googleapis.com/css?family=Do+Hyeon|VT323" rel="stylesheet">
+<link rel = "stylesheet" type = "text/css" href = "assets/css/style.css" />
+
+</head>
+<body>
+	<div class = "container">
+		<table>
+			<thead>
+				<tr>
+					<th>Name</th>
+					<th>Destination</th>
+					<th>First Train:</th>
+					<th>Frequency</th>
+					<th>Next Train(min)</th>
+					</tr>
+			</thead>
+			<tbody>
+				
+			</tbody>
+		</table>
+		<div class = "addFormWrap">
+			<form action = "#" method = "post">
+				<label>Train Name:
+					<input type = "text" name = "train_name" required/>
+				</label>
+				<label>Destination:
+					<input type = "text" name = "destination" required/>
+				</label>
+				<label>First Train Departure:
+					<input type = "text" name = "first_train"  placeholder="13:12" required/>
+				</label>
+				<label>Frequency:
+					<input type = "number" name = "frequency" required/>
+				</label>
+				<button class = "add">ADD TRAIN</button>
+			</form>
+			<button id = "addFormToggle">ADD TRAIN</button>
+		</div><!--addFormWrap-->
+	</div><!--container-->
+</body>
+</html>
